@@ -18,11 +18,13 @@ console.log(jedi);
 console.log(jedi[1]);
 
 // 1f
-const kenobi = jedi.pop();
+jedi.pop();
+// jedi.splice(2, 1);
 console.log(jedi);
 
 // 1g
-const yoda = jedi.shift();
+jedi.shift();
+// jedi.splice(0, 1);
 console.log(jedi);
 
 // 2a
@@ -56,6 +58,35 @@ console.log(droids.protocol);
 
 // 3d
 droids["assassin"] = "IG-11";
-console.log(droids["assassin"]);
+// droids.assassin = "IG-11";
+console.log(droids);
+
+// 4
+console.log(allstarWarsVillains[0][6]);
+
+// 5
+console.log(sithLords.slice(-2, -1));
 
 
+// 6a
+const starWarsMovies = [
+    {
+        episodeOne: "The Phantom Menace", 
+        episodeTwo: "Attack of the Clones", 
+        episodeThree: "Revenge of the Sith"
+    },
+    {
+        episodeFour: "A New Hope", 
+        episodeFive: "The Empire Strikes Back", 
+        episodeSix: "Return of the Jedi"
+    },
+    {
+        episodeSeven: "The Force Awakens", 
+        episodeEight: "The Last Jedi", 
+        episodeNine: "The Rise of Skywalker"
+    }
+];
+
+// 6b
+starWarsMovies.splice(1, 0, "Solo", "Rouge One");
+console.log(starWarsMovies);
